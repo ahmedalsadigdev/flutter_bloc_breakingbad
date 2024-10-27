@@ -22,7 +22,6 @@ class QuoteApi {
       Response response = await dio.get("random");
 
       final results = response.data;
-      print(results);
 
       final Quote quote = Quote.fromJson(results);
       return quote;

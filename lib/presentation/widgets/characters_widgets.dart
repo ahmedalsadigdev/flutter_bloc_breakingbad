@@ -57,8 +57,6 @@ class _CharactersWidgetState extends State<CharactersWidget> {
             crossAxisSpacing: 15,
             childAspectRatio: 2 / 3),
         itemBuilder: (context, index) {
-          print("Index: $index");
-          print("list Length: ${widget.characters.length}");
           return index >= widget.characters.length
               ? const LoadingWidget()
               : characterGridItemWidget(widget.characters[index]);

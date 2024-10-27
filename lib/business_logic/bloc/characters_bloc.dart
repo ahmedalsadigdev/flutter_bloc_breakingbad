@@ -43,7 +43,6 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
         log(characters.length.toString());
       } else if (event is GetCharactersPagesEvent) {
         pages = await repository.getPages();
-        print("pages: $pages");
         emit(GetCharactersPages(pagesNumber: pages));
       } else if (event is SearchCharactersEvent) {
         emit(LoadingCharacters());
