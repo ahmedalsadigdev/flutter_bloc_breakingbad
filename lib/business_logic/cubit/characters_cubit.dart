@@ -2,9 +2,9 @@ import 'dart:developer';
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../data/repository/characters_repository.dart';
 
 import '../../data/models/character.dart';
+import '../../data/repository/characters_repository.dart';
 
 part 'characters_state.dart';
 

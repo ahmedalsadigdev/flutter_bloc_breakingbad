@@ -1,5 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter_bloc_breakingbad/data/api/charactors_api.dart';
+import 'package:rickandmorty/data/api/charactors_api.dart';
 
 import '../models/character.dart';
 

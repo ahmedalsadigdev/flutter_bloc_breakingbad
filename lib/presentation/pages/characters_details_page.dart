@@ -1,12 +1,11 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../data/models/character.dart';
-import '../../helper/contstants/my_colors.dart';
 import 'package:intl/intl.dart';
 
 import '../../business_logic/cubit/quote_cubit.dart';
+import '../../data/models/character.dart';
+import '../../helper/contstants/my_colors.dart';
 import '../widgets/cached_image.dart';
 
 class CharactersDetailsPage extends StatefulWidget {

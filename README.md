@@ -1,4 +1,4 @@
-# flutter_bloc_breakingbad
+# rickandmorty
 
 A new Flutter project.
 

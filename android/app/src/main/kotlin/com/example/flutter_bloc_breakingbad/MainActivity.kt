@@ -1,4 +1,4 @@
-package com.example.flutter_bloc_breakingbad
+package com.malakdigital.rickandmorty
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../business_logic/bloc/characters_bloc.dart';
 import '../../business_logic/cubit/search_cubit.dart';
+import '../../data/models/character.dart';
 import '../../helper/contstants/my_colors.dart';
+import '../../helper/contstants/string.dart';
 import 'cached_image.dart';
 import 'loading_widget.dart';
-import '../../data/models/character.dart';
-import '../../helper/contstants/string.dart';
 
 class CharactersWidget extends StatefulWidget {
   final List<Character> characters;

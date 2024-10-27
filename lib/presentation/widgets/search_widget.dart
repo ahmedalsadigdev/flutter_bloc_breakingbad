@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import '../../business_logic/bloc/characters_bloc.dart';
 import '../../business_logic/cubit/search_cubit.dart';
 import '../../helper/contstants/my_colors.dart';
-import '../../business_logic/cubit/characters_cubit.dart';
 
 class SearchWidget extends StatelessWidget {
   SearchWidget({super.key});
