@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:bloc_concurrency/bloc_concurrency.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -35,8 +36,12 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
 
         try {
           final newCharacters = await repository.getCharacters(nextPage);
-          final list = List.of(characters..addAll(newCharacters));
-          emit(LoadedCharacters(characters: list));
+          characters = List.of(characters..addAll(newCharacters));
+          if (kDebugMode) {
+            print("characters.length: ${characters.length}");
+          }
+          // final list = List.of(characters);
+          emit(LoadedCharacters(characters: characters));
         } catch (error) {
           emit(ErrorCharacters(message: error.toString()));
         }

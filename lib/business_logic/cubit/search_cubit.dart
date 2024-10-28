@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:equatable/equatable.dart';
 
@@ -11,6 +12,9 @@ class SearchCubit extends Cubit<SearchState> {
   void toggleSearch() {
     isSearch = !isSearch;
 
+    if (kDebugMode) {
+      print("isSearch: $isSearch");
+    }
     emit(ChangeSearchState(isSearch: isSearch));
   }
 }

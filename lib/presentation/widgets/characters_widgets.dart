@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -39,6 +40,9 @@ class _CharactersWidgetState extends State<CharactersWidget> {
     if (scrollController.offset >=
         scrollController.position.maxScrollExtent * 0.9) {
       final isSearch = BlocProvider.of<SearchCubit>(context).isSearch;
+      if (kDebugMode) {
+        print("is scrolling $isSearch");
+      }
       if (isSearch == false) {
         BlocProvider.of<CharactersBloc>(context).add(FetchCharactersEvent());
       }
